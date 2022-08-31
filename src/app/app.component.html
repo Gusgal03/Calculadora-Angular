@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>{{titulo}}  </h1>
+  <app-formulario
+    (resultadoSuma) = "resultadoS($event)"
+    (resultadoResta) = "resultadoR($event)"
+    (resultadoMulti) = "resultadoM($event)"
+    (resultadoDivi) = "resultadoD($event)"
+  >
+  </app-formulario>
+  <app-resultado
+    [resultadoHijo] = "resultadoPadre"
+  ></app-resultado>
+</div>
